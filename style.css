@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(166deg, rgba(241, 238, 139, 1) 0%, rgba(172, 172, 205, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: relative;
+    height: 100vh;
+}
+
+
+/* dlaczego pozycjonowanie poetry poprzez transform nie działa 
+dodatkowo dlaczego top i left nie pozycjonuje przy parametrach 50 do środka */
+
+.poetry {
+    position: absolute;
+    max-width: 200px;
+    top: 35%;
+    left: 42%;
+    transform: translate(-50% -50%);
+}
+
+h1,
+h2 {
+    line-height: 5px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+}
